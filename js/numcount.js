@@ -5,9 +5,9 @@ $(window).scroll(function() {
     var
       cPos = $(this).offset().top,
       topWindow = $(window).scrollTop();
-    if (cPos < topWindow + 600) {
+    if (cPos < topWindow + 800) {
       if (cc < 2) {
-        $(".head__text").addClass("viz");
+        $(".head__text, .symbol").addClass("viz");
         $('p').each(function() {
           var
             i = 1,
