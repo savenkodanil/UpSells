@@ -5,8 +5,8 @@
         max-width: 1290px;
         margin: 0 auto;
         .bg__header {
-            background: rgba(2, 14, 12, 0.01);
-            backdrop-filter: blur(40px);   
+            background: rgba(2, 14, 12, 0.7);
+            // backdrop-filter: blur(40px);   
             position: fixed;
             width: 100%;
 
@@ -190,13 +190,6 @@
 
         @media(max-width:1040px) {
             .bg__header {
-                &.open {
-                    backdrop-filter: unset;
-
-                    background: #002b24;
-
-                }
-
                 &::before {
                     all: unset;
                 }
@@ -219,7 +212,7 @@
                         display: flex;
                         flex-direction: column;
                         position: fixed;
-                        top: 0;
+                        bottom: 0;
                         right:  0;
                         width: 60%;
                         height: 100%;
@@ -233,7 +226,7 @@
                         align-items: flex-end;
                         z-index: 1;
                         opacity: 0;
-                        justify-content: space-between;
+                        justify-content: flex-end;
 
                         &::before {
                             content: "";
@@ -248,24 +241,28 @@
                         
                         &.open {
                             transform: translateX(0);
-                            opacity: 1;
-    
+                            opacity: 1;        
                         }
 
                         .menu__nav { 
                             display: flex;
                             flex-direction: column;
-                            padding-top: 210px;
+                           
                             align-items: flex-end;
-                            margin-right: 20px;           
+                            margin-right: 20px;
+                            
+                            position: absolute;
+                            top: 40%;
+                            transform: translateY(-40%);
                         }
 
                         .btn__login {
-                           
                             display: block;
+
                             position: absolute;
                             left: 51%;
-                            transform: translateX(-50% );
+                           
+                            transform: translateX(-50%);
                             bottom: 110px;
                             
                         }

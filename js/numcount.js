@@ -12,7 +12,7 @@ $(window).scroll(function() {
           var
             i = 1,
             num = $(this).data('num'),
-            step = 1000 * time / num,
+            step = 1500 * time / num,
             that = $(this),
             int = setInterval(function() {
               if (i <= num) {
