@@ -57,44 +57,6 @@
                     
                     color: #FFFFFF 
                 }
-
-                .btn__plan {
-                    max-width: 270px;
-                    height: auto;
-
-                    border-radius: 10px;
-
-                    background: #1EEBCD;
-                    box-shadow: 0px 4px 67px rgba(30, 235, 205, 0.6);
-
-                    cursor: pointer;
-                    p {
-                       
-                        font-weight: 700;
-                        font-size: 1.2rem;
-                        line-height: 150%;
-                    
-                        color: #020E0C;
-                        text-align: center;
-                        padding: 30px 30px;
-                          
-                    }
-                }
-
-                a {
-                    
-                    font-size: 1.5rem;
-                    line-height: 150%;
-                    
-                    color: #FFFFFF;
-                    
-                    display: flex;
-                    gap: 6px;
-                    span {
-                        color: #1EEBCD;
-                        text-decoration: underline;
-                    }
-                }
             }
         }
 
@@ -107,24 +69,20 @@
                         font-size: 2.25rem;
                         max-width: 375px;
                     }
-
-                    .btn__plan {
-                        p {
-                            padding: 25px 25px;
-                        }
-                    }
     
                     .info__text {
                         font-size: 1.2rem;
                         max-width: 405px;
                     }
     
-                    a {
-                        font-size: 1.2rem;
-                    }
-    
                 } 
-            }              
+            }     
+            
+            .btn__plan {
+                p {
+                    padding: 25px 25px;
+                }
+            }
         }
 
         .img__bonus__point {
@@ -152,15 +110,6 @@
             flex-direction: column;
             align-items: center;
 
-            .block__bonus__point {
-                .wrapper__info {
-                    .btn__plan {
-                        max-width: 100%;
-                    }
-                }
-                
-            }
-
             .img__bonus__point {
                 transform: translate(-50px, -50px);
 
@@ -170,7 +119,12 @@
                 }
             }
         }
+
+        .btn__plan {
+            max-width: 100%;
+        }
     }
+    
 }
 
 @media(max-width:1320px) {
@@ -313,5 +267,28 @@
             flex-basis: 100%
             
         }
+    }
+}
+
+.btn__plan {
+    max-width: 270px;
+    height: auto;
+
+    border-radius: 10px;
+
+    background: #1EEBCD;
+    box-shadow: 0px 4px 67px rgba(30, 235, 205, 0.6);
+
+    cursor: pointer;
+    p {
+       
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 150%;
+    
+        color: #020E0C;
+        text-align: center;
+        padding: 30px 30px;
+          
     }
 }

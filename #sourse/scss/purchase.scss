@@ -1,6 +1,6 @@
 .section__purchase {
+    margin: 90px auto 150px auto;
     .wrapper__purchase {
-        margin: 90px 0;
         display: flex;
         justify-content: space-between;
 
@@ -26,15 +26,6 @@
                     min-width: 280px;
                     height: 100%;
                 }
-            }
-
-            h3 {
-                font-weight: 700;
-                font-size: 4rem;
-                line-height: 150%;
-                
-                color: #FFFFFF;  
-                max-width: 580px;
             }
         }
 
@@ -72,16 +63,15 @@
                 gap: 40px;
             }
         }
+
+        .btn__plan:nth-child(2) {
+            display: block;
+            margin-top: 60px;
+        }
     }
 
     @media(max-width:480px) {
         .wrapper__purchase {
-            .purchase__svg {
-                h3 {
-                    font-size:2rem;
-                }
-            }
-
             .wrapper__info {
                 .purchase__info__block {
                     .head__text {
@@ -94,5 +84,17 @@
                 }
             }
         }
+       
     }
 }
+
+@media(max-width:1320px) {
+    .section__purchase {
+        margin: 90px 20px 150px 20px;   
+    }
+}
+
+.btn__plan:nth-child(2) {
+    display: none;
+}
+

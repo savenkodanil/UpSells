@@ -44,7 +44,7 @@
                 max-width: 1290px;
                 .logo {
                     svg {
-                        margin: 20px 0 20px 60px;
+                        margin: 15px 0 15px 60px;
                     }
                    
                 }   
@@ -159,7 +159,7 @@
             }    
         }   
 
-        @media(max-width:1200px) {
+        @media(max-width:1210px) {
             .bg__header {
                 &::after {
                     all: unset;
