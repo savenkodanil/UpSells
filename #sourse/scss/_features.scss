@@ -28,7 +28,7 @@
     
                 background: rgba(2, 14, 12, 0.1);
                 backdrop-filter: blur(40px);
-                border: 2px solid rgb(30, 235, 205, .6);
+                border: 2px solid rgba(30, 235, 205, 0.6);
 
                 .wrapper__info {
                     display: flex;
@@ -124,12 +124,10 @@
                 flex-direction: column;
                 .global__info {
                     .btn__features {
-
+                        width: 88%;
+                        position: absolute;
+                        bottom: -130px;      
                     }
-                }
-
-                .text__about {
-                    max-width: unset;
                 }
             }
         }
@@ -150,6 +148,18 @@
                         p {
                             font-size: 1.2rem;
                         }
+                    }
+                }
+            }
+            .global__settings {
+                .global__info {
+                    gap: 30px;
+                    h4 {
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        font-size: 1.5rem;
                     }
                 }
             }
