@@ -23,29 +23,30 @@
     
                 background: rgba(2, 14, 12, 0.1);
                 backdrop-filter: blur(40px);
+                border: 2px solid rgb(30, 235, 205, .6);
 
-                &::before {
-                    content: "";
-                    position: absolute;
-                    background: -webkit-gradient(linear, left top, left bottom, color-stop(6%, rgb(190, 255, 246)), color-stop(80%, rgb(2, 14, 12)));
-                    background: linear-gradient(180deg, rgb(190, 255, 246) -125%, rgb(2, 14, 12) 208%);
-                    width: 2px;
-                    height: 100%;
-                    top: 0;
-                    left: auto;
-                    z-index: -1;
-                }
+                // &::before {
+                //     content: "";
+                //     position: absolute;
+                //     background: -webkit-gradient(linear, left top, left bottom, color-stop(6%, rgb(190, 255, 246)), color-stop(80%, rgb(2, 14, 12)));
+                //     background: linear-gradient(180deg, rgb(2, 14, 12) 208%, rgb(190, 255, 246) -125%);
+                //     width: 2px;
+                //     height: 100%;
+                //     top: 0;
+                //     left: auto;
+                //     z-index: -1;
+                // }
 
-                &::after {
-                    content: "";
-                    position: absolute;
-                    background: -webkit-gradient(linear, left top, right top, color-stop(6%, rgb(190, 255, 246)), color-stop(70%, rgb(2, 14, 12)));
-                    background: linear-gradient(90deg, rgb(190, 255, 246) -20%, rgb(2, 14, 12) 32%);
-                    height: 2px;
-                    width: 100%;
-                    top: 0;
-                    z-index: -1;
-                }
+                // &::after {
+                //     content: "";
+                //     position: absolute;
+                //     background: -webkit-gradient(linear, left top, right top, color-stop(6%, rgb(190, 255, 246)), color-stop(70%, rgb(2, 14, 12)));
+                //     background: linear-gradient(90deg, rgb(190, 255, 246) -20%, rgb(2, 14, 12) 32%);
+                //     height: 2px;
+                //     width: 100%;
+                //     top: 0;
+                //     z-index: -1;
+                // }
 
                 .wrapper__info {
                     display: flex;

@@ -918,27 +918,7 @@ h3 {
   background: rgba(2, 14, 12, 0.1);
   -webkit-backdrop-filter: blur(40px);
           backdrop-filter: blur(40px);
-}
-.bg__wrapper .section__features .wrapper__features .block__features::before {
-  content: "";
-  position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(-125%, rgb(190, 255, 246)), color-stop(208%, rgb(2, 14, 12)));
-  background: linear-gradient(180deg, rgb(190, 255, 246) -125%, rgb(2, 14, 12) 208%);
-  width: 2px;
-  height: 100%;
-  top: 0;
-  left: auto;
-  z-index: -1;
-}
-.bg__wrapper .section__features .wrapper__features .block__features::after {
-  content: "";
-  position: absolute;
-  background: -webkit-gradient(linear, left top, right top, color-stop(-20%, rgb(190, 255, 246)), color-stop(32%, rgb(2, 14, 12)));
-  background: linear-gradient(90deg, rgb(190, 255, 246) -20%, rgb(2, 14, 12) 32%);
-  height: 2px;
-  width: 100%;
-  top: 0;
-  z-index: -1;
+  border: 2px solid rgba(30, 235, 205, 0.6);
 }
 .bg__wrapper .section__features .wrapper__features .block__features .wrapper__info {
   display: -webkit-box;
