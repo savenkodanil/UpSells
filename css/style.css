@@ -437,7 +437,7 @@ body {
 }
 body .bg {
   position: absolute;
-  background: url(/img/bg/Union.svg) no-repeat;
+  background: url(Union.svg) no-repeat;
   width: 100%;
   height: 110%;
   z-index: -1;
@@ -707,7 +707,7 @@ body.open {
   display: flex;
   gap: 2px;
 }
-.wrapper__stats .info__stats .text .numcount span {
+.wrapper__stats .info__stats .text .numcount .symbol {
   font-weight: 700;
   font-size: 4rem;
   line-height: 75px;
