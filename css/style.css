@@ -1045,6 +1045,10 @@ h3 {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .bg__wrapper .section__features .wrapper__features:nth-child(3) .block__svg img {
+    -webkit-transform: translate(-90px, 40px) scale(0.7);
+            transform: translate(-90px, 40px) scale(0.7);
+  }
   .bg__wrapper .section__features .wrapper__features .block__svg img {
     min-width: 320px;
   }

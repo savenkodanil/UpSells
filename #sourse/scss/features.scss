@@ -138,6 +138,13 @@
 
                 &:nth-child(3) {
                     flex-direction: column-reverse;
+
+                    .block__svg {
+                        img {
+                            transform: translate(-90px, 40px) scale(.7);
+
+                        }
+                    }
                 }
 
                 .block__svg {
