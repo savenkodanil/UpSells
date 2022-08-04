@@ -21,6 +21,18 @@
 
             &:nth-child(3) {
                 flex-direction:row-reverse ;
+
+                .block__svg {
+                    img {
+                        opacity: 0;
+                        transition: .5s ease;
+                        transform: translate(90px, 40px) scale(.7);
+                        &._active {
+                            opacity: 1;
+                            transform: translate(0) scale(1);
+                        }
+                    }
+                }
             }
 
             .block__features {
@@ -61,6 +73,15 @@
                     width: 100%;
                     min-width: 420px;
                     height: auto;
+
+                    opacity: 0;
+                    transition: .5s ease;
+                    transform: translate(-90px, 40px) scale(.7);
+                    &._active {
+                        opacity: 1;
+                        transform: translate(0) scale(1);
+                    }
+
                 }
             }
         }
