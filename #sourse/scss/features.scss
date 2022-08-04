@@ -17,6 +17,7 @@
             justify-content: space-between;
 
             margin: 60px 0 100px 0;
+            align-items: center;
 
             &:nth-child(3) {
                 flex-direction:row-reverse ;
@@ -56,10 +57,10 @@
             .block__svg {
                 max-width: 600px;
                 height: auto;
-                svg {
+                img {
                     width: 100%;
-                    min-width: 320px;
-                    height: 100%;
+                    min-width: 420px;
+                    height: auto;
                 }
             }
         }
@@ -106,7 +107,7 @@
             }
         }
     }
-
+    
     @media(max-width:1040px) {
         
         .section__features {
@@ -117,6 +118,12 @@
 
                 &:nth-child(3) {
                     flex-direction: column-reverse;
+                }
+
+                .block__svg {
+                    img {
+                        min-width: 320px;
+                    }
                 }
             }
 
@@ -158,9 +165,13 @@
                         font-size: 2rem;
                     }
 
-                    p {
+                    .plugin {
                         font-size: 1.5rem;
                     }
+                }
+
+                .text__about {
+                    font-size: 1.2rem;
                 }
             }
         }  

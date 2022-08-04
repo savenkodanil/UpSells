@@ -1,0 +1,37 @@
+.BP__plugin {
+  margin: 100px 0 100px 0;
+  .header__text {
+    .text__plugin {
+      max-width: unset;
+    }
+  }
+
+  .swiper {
+    .swiper-wrapper {
+      .swiper-slide{
+        .plugin {
+          display: flex;
+          gap: 10px;
+
+          .info__plugin {
+            h5 {
+              font-weight: 700;
+              font-size: 2.25rem;
+              line-height: 150%;
+
+              color: #1EEBCD;
+            }
+
+            p {
+              font-size: 1.5rem;
+              line-height: 150%;
+
+              color: #FFFFFF;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
