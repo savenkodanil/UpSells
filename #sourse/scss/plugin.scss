@@ -1,9 +1,78 @@
 .BP__plugin {
   margin: 150px 0 150px 0;
+  position: relative;
   .header__text {
     margin-bottom: 100px;
     .text__plugin {
       max-width: unset;
+    }
+  }
+  .nav {
+    position: relative;
+    width: 100%;
+    .swiper-button-next {
+      position: absolute;
+      right: 20px;
+      top: 70px;
+
+      transform: scale(.9);
+      transition: .3s ease;
+      width: 50px;
+      height: 50px;
+      &:hover {
+        transform: scale(1);
+      }
+      &::after {
+        color: #1EEBCD;
+      }
+    }
+    .swiper-button-prev {
+      position: absolute;
+      top: 70px;
+      left: auto;
+      right: 80px;
+
+      transform: scale(.9);
+      transition: .3s ease;
+
+      width: 50px;
+      height: 50px;
+      &:hover {
+        transform: scale(1);
+      }
+      &::after {
+       color: #1EEBCD;
+      }
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      background: #676767;
+
+      height: 2px;
+      top: 70px;
+      width: 80%;
+      .swiper-pagination-progressbar-fill {
+        background: #1EEBCD;
+        border-radius: 2px;
+        height: 7px;
+        top: -3px;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .nav {
+      .swiper-button-prev {
+        right: 45px;
+      }
+
+      .swiper-button-next {
+        right: 0;
+      }
+      .swiper-pagination {
+        width: 70%;
+      }
     }
   }
 
@@ -28,7 +97,23 @@
               line-height: 150%;
 
               color: #FFFFFF;
+              max-width: 1000px;
 
+            }
+          }
+        }
+        @media (max-width: 600px) {
+          .plugin {
+            flex-direction: column;
+
+            .info__plugin {
+              h5 {
+                font-size: 1.5rem;
+              }
+
+              p {
+                font-size: 1.2rem;
+              }
             }
           }
         }

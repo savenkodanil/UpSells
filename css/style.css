@@ -1065,12 +1065,78 @@ h3 {
 
 .BP__plugin {
   margin: 150px 0 150px 0;
+  position: relative;
 }
 .BP__plugin .header__text {
   margin-bottom: 100px;
 }
 .BP__plugin .header__text .text__plugin {
   max-width: unset;
+}
+.BP__plugin .nav {
+  position: relative;
+  width: 100%;
+}
+.BP__plugin .nav .swiper-button-next {
+  position: absolute;
+  right: 20px;
+  top: 70px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  width: 50px;
+  height: 50px;
+}
+.BP__plugin .nav .swiper-button-next:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.BP__plugin .nav .swiper-button-next::after {
+  color: #1EEBCD;
+}
+.BP__plugin .nav .swiper-button-prev {
+  position: absolute;
+  top: 70px;
+  left: auto;
+  right: 80px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  width: 50px;
+  height: 50px;
+}
+.BP__plugin .nav .swiper-button-prev:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.BP__plugin .nav .swiper-button-prev::after {
+  color: #1EEBCD;
+}
+.BP__plugin .nav .swiper-pagination {
+  position: absolute;
+  background: #676767;
+  height: 2px;
+  top: 70px;
+  width: 80%;
+}
+.BP__plugin .nav .swiper-pagination .swiper-pagination-progressbar-fill {
+  background: #1EEBCD;
+  border-radius: 2px;
+  height: 7px;
+  top: -3px;
+}
+@media (max-width: 700px) {
+  .BP__plugin .nav .swiper-button-prev {
+    right: 45px;
+  }
+  .BP__plugin .nav .swiper-button-next {
+    right: 0;
+  }
+  .BP__plugin .nav .swiper-pagination {
+    width: 70%;
+  }
 }
 .BP__plugin .swiper .swiper-wrapper .swiper-slide .plugin {
   display: -webkit-box;
@@ -1088,4 +1154,19 @@ h3 {
   font-size: 1.5rem;
   line-height: 150%;
   color: #FFFFFF;
+  max-width: 1000px;
+}
+@media (max-width: 600px) {
+  .BP__plugin .swiper .swiper-wrapper .swiper-slide .plugin {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .BP__plugin .swiper .swiper-wrapper .swiper-slide .plugin .info__plugin h5 {
+    font-size: 1.5rem;
+  }
+  .BP__plugin .swiper .swiper-wrapper .swiper-slide .plugin .info__plugin p {
+    font-size: 1.2rem;
+  }
 }

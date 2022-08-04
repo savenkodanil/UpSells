@@ -9,7 +9,28 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 
-    scrollbar: {
-        el: '.swiper-scrollbar',
+    pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
     },
+
+    autoplay: {
+        delay:7000,
+        disableOnInteraction:false
+    },
+
+    breakpoints: {
+        359: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+
+        1100: {
+            slidesPerView: 2,
+        },
+
+        1380: {
+            slidesPerView: 2,
+        }
+    }
 });
