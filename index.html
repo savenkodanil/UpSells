@@ -23,6 +23,7 @@
     <script src="js/lang.js" defer></script>
     <script src="js/numcount.js" defer></script>
     <script src="js/paralax.js" defer></script>
+    <script src="js/tabs.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
 
     <title>UpSells</title>
@@ -2095,7 +2096,7 @@
                     <h3 class="text__plugin">Your shop needs BP plugin</h3>
                 </div>
 
-                <div class="swiper wrapper__plugin">
+                <div class="swiper wrapper__plugin s1">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -3981,10 +3982,10 @@
                 </div>
 
                 <div class="nav">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div id="nav1" class="swiper-button-prev"></div>
+                    <div id="nav1" class="swiper-button-next"></div>
 
-                    <div class="swiper-pagination"></div>
+                    <div id="pag1" class="swiper-pagination"></div>
                 </div>
 
             </div>
@@ -4227,6 +4228,309 @@
 
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="section__price">
+            <div class="bg__price"></div>
+
+            <div class="all__wriper">
+                <div class="head__text">
+                    <h3 class="header__text">Pricing</h3>
+
+                    <div class="pagination">
+                        <div class="el__pag" data-tab="#tab_1">
+                            <p>Monthly</p>
+                            <div class="pug">
+                                <div class="no__active _active "></div>
+                            </div>
+                        </div>
+
+                        <div class="el__pag" data-tab="#tab_2">
+                            <p>Yearly</p>
+                            <div class="pug">
+                                <div class="_active no__active two"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab_1" class="wrapper__price">
+                                    <div class="block__price">
+                                        <p class="site__limit">Unlimited</p>
+
+                                        <p class="price">$299</p>
+
+                                        <div class="how__many">
+                                            <div class="info__how__many">
+                                                <p>Five site</p>
+
+                                                <hr>
+                                            </div>
+
+                                            <div class="info__how__many">
+                                                <p>Lifetime Updates</p>
+
+                                                <hr>
+                                            </div>
+
+                                            <div class="info__how__many">
+                                                <p>Lifetime Support</p>
+
+                                                <hr>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn buy">
+                                            <p class="p__buy">Buy now</p>
+                                        </div>
+
+                                        <div class="btn free">
+                                            <p>Free version</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="block__price">
+                                        <p class="site__limit">Five Sites</p>
+
+                                        <p class="price">$149</p>
+
+                                        <div class="how__many">
+                                            <div class="info__how__many">
+                                                <p>Unlimited site</p>
+
+                                                <hr>
+                                            </div>
+
+                                            <div class="info__how__many">
+                                                <p>Lifetime Updates</p>
+
+                                                <hr>
+                                            </div>
+
+                                            <div class="info__how__many">
+                                                <p>Lifetime Support</p>
+
+                                                <hr>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn buy">
+                                            <p class="p__buy">Buy now</p>
+                                        </div>
+
+                                        <div class="btn free">
+                                            <p>Free version</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="block__price">
+                                        <p class="site__limit">Two Sites</p>
+
+                                        <p class="price">$100</p>
+
+                                        <div class="how__many">
+                                            <div class="info__how__many">
+                                                <p>Two site</p>
+
+                                                <hr>
+                                            </div>
+
+                                            <div class="info__how__many">
+                                                <p>Lifetime Updates</p>
+
+                                                <hr>
+                                            </div>
+
+                                            <div class="info__how__many">
+                                                <p>Lifetime Support</p>
+
+                                                <hr>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn buy">
+                                            <p class="p__buy">Buy now</p>
+                                        </div>
+
+                                        <div class="btn free">
+                                            <p>Free version</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="block__price">
+                                        <p class="site__limit">One Site</p>
+
+                                        <p class="price">$49</p>
+
+                                        <div class="how__many">
+                                            <div class="info__how__many">
+                                                <p>Single site</p>
+
+                                                <hr>
+                                            </div>
+
+                                            <div class="info__how__many">
+                                                <p>Lifetime Updates</p>
+
+                                                <hr>
+                                            </div>
+
+                                            <div class="info__how__many">
+                                                <p>Lifetime Support</p>
+
+                                                <hr>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn buy">
+                                            <p class="p__buy">Buy now</p>
+                                        </div>
+
+                                        <div class="btn free">
+                                            <p>Free version</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                <div id="tab_2" class="wrapper__price">
+                                    <div class="block__price">
+                                        <p class="site__limit">Unlimited</p>
+
+                                        <p class="price">$599</p>
+
+                                        <div class="how__many">
+                                            <div class="info__how__many">
+                                                <p>Five site</p>
+
+                                                <hr>
+                                            </div>
+
+                                            <div class="info__how__many">
+                                                <p>Lifetime Updates</p>
+
+                                                <hr>
+                                            </div>
+
+                                            <div class="info__how__many">
+                                                <p>Lifetime Support</p>
+
+                                                <hr>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn buy">
+                                            <p class="p__buy">Buy now</p>
+                                        </div>
+
+                                        <div class="btn free">
+                                            <p>Free version</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="block__price">
+                                        <p class="site__limit">Five Sites</p>
+
+                                        <p class="price">$249</p>
+
+                                        <div class="how__many">
+                                            <div class="info__how__many">
+                                                <p>Unlimited site</p>
+
+                                                <hr>
+                                            </div>
+
+                                            <div class="info__how__many">
+                                                <p>Lifetime Updates</p>
+
+                                                <hr>
+                                            </div>
+
+                                            <div class="info__how__many">
+                                                <p>Lifetime Support</p>
+
+                                                <hr>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn buy">
+                                            <p class="p__buy">Buy now</p>
+                                        </div>
+
+                                        <div class="btn free">
+                                            <p>Free version</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="block__price">
+                                        <p class="site__limit">Two Sites</p>
+
+                                        <p class="price">$200</p>
+
+                                        <div class="how__many">
+                                            <div class="info__how__many">
+                                                <p>Two site</p>
+
+                                                <hr>
+                                            </div>
+
+                                            <div class="info__how__many">
+                                                <p>Lifetime Updates</p>
+
+                                                <hr>
+                                            </div>
+
+                                            <div class="info__how__many">
+                                                <p>Lifetime Support</p>
+
+                                                <hr>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn buy">
+                                            <p class="p__buy">Buy now</p>
+                                        </div>
+
+                                        <div class="btn free">
+                                            <p>Free version</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="block__price">
+                                        <p class="site__limit">One Site</p>
+
+                                        <p class="price">$149</p>
+
+                                        <div class="how__many">
+                                            <div class="info__how__many">
+                                                <p>Single site</p>
+
+                                                <hr>
+                                            </div>
+
+                                            <div class="info__how__many">
+                                                <p>Lifetime Updates</p>
+
+                                                <hr>
+                                            </div>
+
+                                            <div class="info__how__many">
+                                                <p>Lifetime Support</p>
+
+                                                <hr>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn buy">
+                                            <p class="p__buy">Buy now</p>
+                                        </div>
+
+                                        <div class="btn free">
+                                            <p>Free version</p>
+                                        </div>
+                                    </div>
+                                </div>
+
             </div>
         </section>
     </main>

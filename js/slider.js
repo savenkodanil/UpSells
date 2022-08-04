@@ -1,16 +1,16 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.s1', {
     slidesPerView: "2",
     grabCursor: true,
     loop: true,
     spaceBetween: 40,
 
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '#nav1',
+        prevEl: '#nav1',
     },
 
     pagination: {
-        el: ".swiper-pagination",
+        el: "#pag1",
         type: "progressbar",
     },
 
@@ -33,4 +33,20 @@ const swiper = new Swiper('.swiper', {
             slidesPerView: 2,
         }
     }
+});
+
+const swiper2 = new Swiper2('.s2', {
+    slidesPerView: "1",
+    loop: true,
+
+    pagination: {
+        el: "#pag2",
+        type: 'bullets',
+    },
+
+    autoplay: {
+        delay:10000,
+        disableOnInteraction:false
+    },
+
 });
