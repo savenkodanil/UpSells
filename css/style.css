@@ -1064,7 +1064,10 @@ h3 {
 }
 
 .BP__plugin {
-  margin: 100px 0 100px 0;
+  margin: 150px 0 150px 0;
+}
+.BP__plugin .header__text {
+  margin-bottom: 100px;
 }
 .BP__plugin .header__text .text__plugin {
   max-width: unset;
@@ -1073,7 +1076,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 .BP__plugin .swiper .swiper-wrapper .swiper-slide .plugin .info__plugin h5 {
   font-weight: 700;

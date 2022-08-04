@@ -1,6 +1,7 @@
 .BP__plugin {
-  margin: 100px 0 100px 0;
+  margin: 150px 0 150px 0;
   .header__text {
+    margin-bottom: 100px;
     .text__plugin {
       max-width: unset;
     }
@@ -11,7 +12,7 @@
       .swiper-slide{
         .plugin {
           display: flex;
-          gap: 10px;
+          gap: 15px;
 
           .info__plugin {
             h5 {
