@@ -88,6 +88,7 @@
             transition: .5s ease;
             transform: scale(.8);
             width: 100%;
+
             &.active {
               opacity: 1;
               transform: scale(1);
@@ -212,6 +213,29 @@
               }
             }
           }
+          @media (max-width: 1170px) {
+            .wrapper__price {
+              flex-wrap: wrap;
+              gap: 20px;
+              .block__price {
+                flex-basis: 48%;
+                //&:nth-child(n+2) {
+                //  background: #0E2E29;
+                //  border: ubnset;
+                //}
+
+              }
+            }
+          }
+
+    @media (max-width: 680px) {
+      .wrapper__price {
+        .block__price {
+          flex-basis: 100%;
+
+        }
+      }
+    }
 
   }
 }

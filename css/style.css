@@ -1670,3 +1670,20 @@ h3 {
 .section__price .all__wriper .wrapper__price .block__price:nth-child(n+2) .free p {
   color: #FFFFFF;
 }
+@media (max-width: 1170px) {
+  .section__price .all__wriper .wrapper__price {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
+  .section__price .all__wriper .wrapper__price .block__price {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+}
+@media (max-width: 680px) {
+  .section__price .all__wriper .wrapper__price .block__price {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
