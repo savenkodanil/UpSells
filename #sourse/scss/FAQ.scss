@@ -1,0 +1,140 @@
+.section__faq {
+  margin-bottom: 200px;
+  .wrapper__reviews {
+    display: flex;
+    gap: 140px;
+    .block__faq {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      .color__text {
+        color: #1EEBCD;
+      }
+
+      p {
+        font-size: 1.5rem;
+        line-height: 150%;
+
+        color: #FFFFFF;
+      }
+
+      .btn__document {
+        width: 100%;
+        border-radius: 10px;
+        border: 3px solid  #1EEBCD;
+        cursor: pointer;
+
+        p {
+          font-weight: 700;
+          font-size: 1.2rem;
+          line-height: 150%;
+
+          color: #1EEBCD;
+
+          padding: 30px 193px;
+          text-align: center;
+        }
+
+      }
+
+    }
+
+    .info__block {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+
+      .info {
+        display: flex;
+        gap: 35px;
+        cursor: pointer;
+
+        position: relative;
+        &.active {
+          .svg {
+            svg {
+              transform: rotate(90deg);
+            }
+          }
+        }
+
+        .svg {
+          svg {
+            width: 40px;
+            height: 40px;
+            margin-top: 15px;
+            transition: .2s ease-in-out;
+          }
+        }
+
+        .text__info {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+
+          h5 {
+            font-weight: 700;
+            font-size: 2.25rem;
+            line-height: 150%;
+            color: #FFFFFF;
+          }
+
+
+          p {
+            font-size: 1.5rem;
+            line-height: 150%;
+
+            color: #FFFFFF;
+
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+            &.active {
+              opacity: 1;
+              position: relative;
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .wrapper__reviews {
+      flex-direction: column;
+      gap: 100px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .wrapper__reviews {
+      gap: 60px;
+      .block__faq {
+        gap: 30px;
+        p {
+          font-size: 1.2rem;
+        }
+
+        .btn__document {
+          p {
+            padding: 30px 50px;
+          }
+        }
+      }
+
+      .info__block {
+        .info {
+          .text__info {
+            h5 {
+              font-size: 1.5rem;
+            }
+            p {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

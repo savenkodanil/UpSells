@@ -47,16 +47,14 @@
 
     .swiper-pagination {
       position: absolute;
-      background: #676767;
+      background: #0E2E29;
 
-      height: 2px;
+      height: 5px;
       top: 70px;
       width: 80%;
       .swiper-pagination-progressbar-fill {
         background: #1EEBCD;
-        border-radius: 2px;
-        height: 7px;
-        top: -3px;
+        height: 5px;
       }
     }
   }
