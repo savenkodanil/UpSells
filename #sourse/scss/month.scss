@@ -55,6 +55,9 @@
       .swiper-wrapper {
         .swiper-slide {
           opacity: 0;
+          &:not(.swiper-slide-active){
+            opacity: 0 !important;
+          }
           .wrapper__meta {
             display: flex;
             flex-direction: column;
@@ -386,8 +389,4 @@
   .h4 {
     font-size: 1.5rem;
   }
-}
-
-.swiper-slide:not(.swiper-slide-active){
-  opacity: 0 !important;
 }

@@ -1697,6 +1697,27 @@ h3 {
         flex-basis: 100%;
   }
 }
+@media (max-width: 680px) and (max-width: 480px) {
+  .section__price .all__wrapper .wrapper {
+    height: 2500px;
+  }
+  .section__price .all__wrapper .wrapper .wrapper__price {
+    margin: 70px 0 100px 0;
+  }
+  .section__price .all__wrapper .wrapper .wrapper__price .block__price {
+    padding: 20px;
+    gap: 20px;
+  }
+  .section__price .all__wrapper .wrapper .wrapper__price .block__price .site__limit {
+    font-size: 1.5rem;
+  }
+  .section__price .all__wrapper .wrapper .wrapper__price .block__price .how__many .info__how__many p {
+    font-size: 1.2rem;
+  }
+  .section__price .all__wrapper .wrapper .wrapper__price .block__price .btn p {
+    font-size: 1rem;
+  }
+}
 
 @media (max-width: 680px) {
   .section__price .all__wrapper .wrapper__price {
@@ -1718,6 +1739,14 @@ h3 {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 15px;
+  }
+}
+@media (max-width: 680px) and (max-width: 480px) {
+  .section__price .all__wrapper .head__text {
+    gap: 35px;
+  }
+  .section__price .all__wrapper .head__text .pagination .el__pag {
+    font-size: 1.3rem;
   }
 }
 .section__reviews {
@@ -1829,7 +1858,7 @@ h3 {
 }
 
 .section__faq {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .section__faq .wrapper__reviews {
   display: -webkit-box;
@@ -2017,6 +2046,9 @@ h3 {
 }
 .section__month .slider .s3 .swiper-wrapper .swiper-slide {
   opacity: 0;
+}
+.section__month .slider .s3 .swiper-wrapper .swiper-slide:not(.swiper-slide-active) {
+  opacity: 0 !important;
 }
 .section__month .slider .s3 .swiper-wrapper .swiper-slide .wrapper__meta {
   display: -webkit-box;
@@ -2322,7 +2354,4 @@ h3 {
   .h4 {
     font-size: 1.5rem;
   }
-}
-.swiper-slide:not(.swiper-slide-active) {
-  opacity: 0 !important;
 }
