@@ -1,0 +1,393 @@
+.section__month {
+  position: relative;
+  .bg__month {
+    background: url("Union2.svg") no-repeat;
+    width: 1080px;
+    height: 1368px;
+    position: absolute;
+    top: 413px;
+    right: 0;
+  }
+  .slider {
+    display: flex;
+    gap: 60px;
+    position: relative;
+    justify-content: space-between;
+    margin: 120px 0 100px 0;
+    .s3 {
+      position: relative;
+      margin: 0;
+
+      #prev {
+        position: absolute;
+        right: 80px;
+        top: 50px;
+        left: unset;
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+        background: #1EEBCD;
+        svg {
+          transform: translateX(-3px) rotate(180deg);
+        }
+        &::after {
+          display: none;
+        }
+      }
+
+      #next {
+        position: absolute;
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+        background: #1EEBCD;
+        right: 0;
+        top: 50px;
+        svg {
+          transform: translateX(3px);
+        }
+        &::after {
+          display: none;
+        }
+      }
+
+
+      .swiper-wrapper {
+        .swiper-slide {
+          opacity: 0;
+          .wrapper__meta {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            .header__block {
+              display: flex;
+              .meta {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                p {
+                  &:nth-child(1) {
+                    font-weight: 700;
+                    font-size: 2.25rem;
+                    line-height: 150%;
+
+                    color: #FFFFFF;
+                  }
+
+                  &:nth-child(2) {
+                    font-size: 1.5rem;
+                    line-height: 150%;
+
+                    color: #FFFFFF;
+                  }
+                }
+              }
+              .btn {
+                display: flex;
+              }
+            }
+
+            .bottom__block {
+              display: flex;
+              gap: 30px;
+              .before {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                width: 100%;
+                .regular {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  p {
+                    font-size: 1.5rem;
+                    line-height: 150%;
+
+                    color: #FFFFFF;
+                  }
+                  .block {
+                    width: 100%;
+                    height: auto;
+                    background: #0E2E29;
+                    border-radius: 10px;
+                    p {
+                      font-size: 1.5rem;
+                      line-height: 150%;
+                      text-align: center;
+                      color: #FFFFFF;
+                    }
+                  }
+                }
+
+                .profit {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  p {
+                    font-size: 1.5rem;
+                    line-height: 150%;
+
+                    color: #FFFFFF;
+                  }
+                  .block {
+                    width: 100%;
+                    height: auto;
+                    background: #0E2E29;
+                    border-radius: 10px;
+                    p {
+                      font-size: 1.5rem;
+                      line-height: 150%;
+                      text-align: center;
+                      color: #FFFFFF;
+                      padding: 10px 20px;
+                    }
+                  }
+                }
+
+                .cost {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  p {
+                    font-size: 1.5rem;
+                    line-height: 150%;
+
+                    color: #FFFFFF;
+                  }
+                  .block {
+                    width: 100%;
+                    height: auto;
+                    background: #0E2E29;
+                    border-radius: 10px;
+                    p {
+                      font-size: 1.5rem;
+                      line-height: 150%;
+                      text-align: center;
+                      color: #FFFFFF;
+                      padding: 20px 20px;
+                    }
+                  }
+                }
+              }
+
+              .after {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                width: 100%;
+                .regular {
+                    width: 100%;
+                    height: auto;
+                    background: #1EEBCD;
+                    border-radius: 10px;
+                    p {
+                      font-size: 1.5rem;
+                      line-height: 150%;
+                      text-align: center;
+                      color: #000;
+                      padding: 23px 0px;
+                    }
+
+                }
+
+                .profit {
+                  width: 100%;
+                  height: auto;
+                  background: #1EEBCD;
+                  border-radius: 10px;
+                  p {
+                    font-size: 1.5rem;
+                    line-height: 150%;
+                    text-align: center;
+                    color: #000;
+                    padding: 34px 0px;
+                  }
+
+                }
+
+                .cost {
+                  width: 100%;
+                  height: auto;
+                  background: #1EEBCD;
+                  border-radius: 10px;
+                  p {
+                    font-size: 1.5rem;
+                    line-height: 150%;
+                    text-align: center;
+                    color: #000;
+                    padding: 43px 0px;
+                  }
+
+                }
+              }
+            }
+
+          }
+        }
+      }
+
+    }
+  }
+
+  .block__meta {
+    max-width: 597px;
+    backdrop-filter: blur(40px);
+    border-right: 2px solid #1EEBCD;
+    border-image: linear-gradient(360deg, rgb(190, 255, 246) 6%, rgb(2, 14, 12) 70%) 1%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: linear-gradient(240deg, rgb(190, 255, 246) 6%, rgb(2, 14, 12) 80%);
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      right: auto;
+      z-index: -1;
+    }
+
+    .info__meta {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      padding: 60px;
+      h5 {
+        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 150%;
+
+        color: #FFFFFF;
+
+      }
+      p {
+        font-size: 1.5rem;
+        line-height: 150%;
+
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+@media (max-width: 1220px) {
+  .section__month {
+    .slider {
+      flex-direction: column;
+    }
+    .block__meta {
+      width: 100%;
+      max-width: unset;
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .section__month {
+    .slider {
+      margin: 50px 0 100px 0;
+      .s3 {
+        .swiper-wrapper {
+          .swiper-slide {
+            .wrapper__meta {
+              .header__block {
+                .meta{
+                  p:nth-child(1) {
+                    font-size: 1.2rem;
+                  }
+
+                  p:nth-child(2) {
+                    font-size: 1.2rem;
+                  }
+
+                }
+              }
+
+              .bottom__block {
+                .before {
+                  .regular {
+                    p {
+                      font-size: 1.2rem;
+                    }
+                    .block {}
+                    p {
+                      font-size: 1.2rem;
+                    }
+                  }
+
+                  .profit {
+                    p {
+                      font-size: 1.2rem;
+                    }
+                    .block {}
+                    p {
+                      font-size: 1.2rem;
+                    }
+                  }
+
+                  .cost {
+                    p {
+                      font-size: 1.2rem;
+                    }
+                    .block {}
+                    p {
+                      font-size: 1.2rem;
+                    }
+                  }
+                }
+                .after {
+                  .regular {
+                    p {
+                      font-size: 1.2rem;
+                    }
+                  }
+
+                  .profit {
+                    p {
+                      font-size: 1.2rem;
+                    }
+                  }
+
+                  .cost {
+                    p {
+                      font-size: 1.2rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .block__meta {
+      .info__meta {
+        padding: 30px;
+        gap: 30px;
+        h5 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+.h4 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 150%;
+
+  color: #FFFFFF;
+}
+@media (max-width: 565px) {
+  .h4 {
+    font-size: 1.5rem;
+  }
+}
+
+.swiper-slide:not(.swiper-slide-active){
+  opacity: 0 !important;
+}

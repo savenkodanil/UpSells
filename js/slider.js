@@ -5,8 +5,8 @@ const swiper = new Swiper('.s1', {
     spaceBetween: 40,
 
     navigation: {
-        nextEl: '#nav1',
-        prevEl: '#nav1',
+        nextEl: '#next1',
+        prevEl: '#prev1',
     },
 
     pagination: {
@@ -66,3 +66,13 @@ const swiper2 = new Swiper('.s2', {
         }
     }
 });
+
+const swiper3 = new Swiper('.s3', {
+    effect: "fade",
+
+    navigation: {
+        nextEl: "#next",
+        prevEl: "#prev",
+    },
+});
+
