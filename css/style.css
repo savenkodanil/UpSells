@@ -209,7 +209,7 @@ table {
 .header .wrapper__header .bg__header .menu__content .burger {
   display: none;
 }
-@media (max-width: 1210px) {
+@media (max-width: 1265px) {
   .header .wrapper__header .bg__header::after {
     all: unset;
   }
