@@ -1,0 +1,74 @@
+/***************************
+*****BUTTON-BACK-TO-TOP*****
+***************************/
+#toTop {
+  display: none;
+}
+
+.button__to__top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 50px;
+  height: 50px;
+  border-color: transparent;
+  border-radius: 20%;
+  background: rgba(255, 11, 83, 0.8);
+  opacity: 0.9;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  z-index: 1000;
+}
+.button__to__top.active {
+  display: none;
+}
+.button__to__top .arrow-svg {
+  width: 30px;
+  height: 30px;
+  fill: #DFE9F4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-42%, -50%) rotate(270deg);
+          transform: translate(-42%, -50%) rotate(270deg);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.button__to__top .arrow-svg svg {
+  -webkit-animation: back__to__top 1s ease-in-out infinite alternate;
+          animation: back__to__top 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes back__to__top {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+}
+@keyframes back__to__top {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+}
+.button__to__top:hover .arrow-svg {
+  -webkit-transform: translate(-42%, -53%) rotate(270deg);
+          transform: translate(-42%, -53%) rotate(270deg);
+}
+.button__to__top:hover .arrow-svg svg {
+  -webkit-animation: unset;
+          animation: unset;
+}
+.button__to__top:hover, .button__to__top:focus {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  outline: none;
+}
